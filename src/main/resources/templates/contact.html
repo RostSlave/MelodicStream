@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Контакты</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+      <!-- style css -->
+      <link rel="stylesheet" th:href="@{/css/style.css}">
+      <!-- Responsive-->
+      <link rel="stylesheet" th:href="@{/css/responsive.css}">
+      <!-- fevicon -->
+      <link rel="icon" th:href="@{/images/fevicon.png}" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" th:href="@{/css/jquery.mCustomScrollbar.min.css}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img th:src="@{/images/loading.gif}" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a th:href="@{/}"><img th:src="@{/images/logo.jpg}" alt="#" /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item">
+                                 <a class="nav-link" th:href="@{/}">Главная</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" th:href="@{/info}">О нас</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" th:href="@{/artists}">Наши музыканты</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" th:href="@{/services}">Наши услуги</a>
+                              </li>
+                              <li class="nav-item active">
+                                 <a class="nav-link" th:href="@{/contact}">Контакты</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" th:href="@{/login}">Вход</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <div class="three"><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Контакты&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1></div>
+      <!-- end header -->
+      <div class="contact">
+         <div class="container inf_contacts">
+            <div class="row row_changed ">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Контакты</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row row_changed">
+               <div class="col-md-6">
+                  <div class="map_main">
+                     <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.0909393678335!2d27.61648452241115!3d53.930128215057735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf1b88d41e91%3A0xf42140fd3b230ccc!2z0J7QsdGJ0LXQttC40YLQuNC1IOKEliA2INCR0JPQkNCi0KM!5e0!3m2!1sru!2sby!4v1682371686119!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row row_changed inf_cont">
+               <ul>
+                  <li><i class="fa fa-map-marker" ></i>г. Минск, ул. Кедышко 10а</li>
+                  <li><i class="fa fa-mobile" ></i>+375444909957</li>
+                  <li><i class="fa fa-clock-o" ></i>9:00-21:00</li>
+                  <li> <i class="fa fa-envelope" ></i><a href="#"> qwe.rostislav@mail.ru</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- end contact -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class=" col-md-4">
+                     <h3>Контакты</h3>
+                     <ul class="conta">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>г. Минск, ул. Кедышко 10а</li>
+                        <li><i class="fa fa-mobile" aria-hidden="true"></i>+375444909957</li>
+                        <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="#"> qwe.rostislav@mail.ru</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-4">
+                     <h3>Навигация</h3>
+                     <ul class="link_menu">
+                        <li class="active"><a th:href="@{/}">Главная</a></li>
+                        <li><a th:href="@{/info}">О нас</a></li>
+                        <li><a th:href="@{/artists}">Наши артисты</a></li>
+                        <li><a th:href="@{/services}">Наши услуги</a></li>
+                        <li><a th:href="@{/contact}">Контакты</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-4">
+                     <h3>Социальные сети</h3>
+                     <ul class="social_icon">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row row_changed">
+                     <p>
+                        2023 © MelodicStream
+                        <br><br>
+                        Лучший музыкальный дистрибьютор
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script th:src="@{/js/jquery.min.js}"></script>
+      <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+      <script th:src="@{/js/jquery-3.0.0.min.js}"></script>
+      <!-- sidebar -->
+      <script th:src="@{/js/jquery.mCustomScrollbar.concat.min.js}"></script>
+      <script th:src="@{/js/custom.js}"></script>
+   </body>
+</html>

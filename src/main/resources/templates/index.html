@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<!-- basic -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- mobile metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<!-- site metas -->
+	<title>Melodicstream</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- bootstrap css -->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+	<!-- style css -->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+	<!-- Responsive-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/responsive.css}"/>
+	<!-- fevicon -->
+	<link rel="icon" th:href="@{/images/fevicon.png}" type="image/gif"/>
+	<!-- Scrollbar Custom CSS -->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/jquery.mCustomScrollbar.min.css}">
+	<!-- Tweaks for older IEs-->
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+<body class="main-layout">
+<!-- loader  -->
+<div class="loader_bg">
+	<div class="loader"><img th:src="@{/images/loading.gif}" alt="#"/></div>
+</div>
+<!-- end loader -->
+<!-- header -->
+<header>
+	<!-- header inner -->
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+					<div class="full">
+						<div class="center-desk">
+							<div class="logo">
+								<a th:href="@{/}"><img th:src="@{/images/logo.jpg}" alt="#" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+					<nav class="navigation navbar navbar-expand-md navbar-dark ">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarsExample04">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item active">
+									<a class="nav-link" th:href="@{/}">Главная</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" th:href="@{/info}">О нас</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" th:href="@{/artists}">Наши музыканты</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" th:href="@{/services}">Наши услуги</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" th:href="@{/contact}">Контакты</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" th:href="@{/login}">Вход</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- end header inner -->
+<!-- end header -->
+<!-- banner -->
+<section class="banner_main">
+	<div class="about_1">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="titlepage">
+						<h2>Музыка - наше все</h2>
+						<p>Музыка - это странствие в мире звуков, которое способно перенести нас в иные измерения, открыть новые грани чувств и эмоций. Она способна поднимать настроение, вдохновлять на новые свершения и помогать найти ответы на вопросы, которые казались безответными. Музыка - это язык, который понимают все, и который способен объединять людей вокруг общих идей и ценностей.</p>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="about_img">
+						<img th:src="@{/images/naushniki.png}" alt="#"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end banner -->
+<!-- about -->
+<div class="about">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="titlepage">
+					<h2>О нас</h2>
+					<p>На сайте можно быстро и легко загружать треки, а также получать отчисления
+						от продажи музыки. Мы предоставляем инструменты для анализа продаж и прослушиваний,
+						а также возможности для создания промо-кодов и распространения музыки на
+						различных платформах. Регистрируйтесь и начинайте продавать свою музыку уже сегодня!  </p>
+					<a class="read_more" th:href="@{/info}"> Узнать больше</a>
+				</div>
+			</div>
+			<div class="col-md-7">
+				<div class="about_img">
+					<figure><img th:src="@{/images/concert.webp}" alt="#"/></figure>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end about -->
+<!-- our_room -->
+<div  class="our_artists">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="titlepage">
+					<h2>Наши музыканты</h2>
+				</div>
+			</div>
+		</div>
+		<div class="artist">
+			<div class="artists">
+				<img class="nh-cards_round" alt="Моргенштерн" sizes="(max-width: 767px) 288px, (min-width: 768px) 313px" src="//i.siteapi.org/8OtbQ3JrE8WKnde_ev7QQHpl55k=/fit-in/313x939/filters:format(png):no_upscale(1)/s2.siteapi.org/a8208ce1cf70462/cards/sh5qd2637688cw0cog0k0sw444gkcs" media="(-webkit-min-device-pixel-ratio: 1.5)">
+				<div class="nh-cards_info">
+					<h4 class="nh-cards__title nh-cards__title_no-margin" style="color: #000000;text-align: center">Моргенштерн
+					</h4>
+				</div>
+			</div>
+			<div class="artists">
+				<img class="nh-cards_round" alt="Lovv66" sizes="(max-width: 767px) 288px, (min-width: 768px) 313px" src="//i.siteapi.org/qJTDPOgLw-YsgQoNqbAruyWfnr0=/fit-in/313x939/filters:format(png):no_upscale(1)/s2.siteapi.org/a8208ce1cf70462/cards/58x1t1dl2vswo40008k0oogocsscsk" media="(-webkit-min-device-pixel-ratio: 1.5)">
+				<div class="nh-cards_info">
+					<h4 class="nh-cards__title nh-cards__title_no-margin" style="color: #000000;text-align: center">Lovv66
+					</h4>
+				</div>
+			</div>
+			<div class="artists">
+				<img class="nh-cards_round" alt="Николай Басков" sizes="(max-width: 767px) 288px, (min-width: 768px) 313px" src="//i.siteapi.org/eSRQ5zjU62WuOKEP-86nFAIpipI=/fit-in/313x939/filters:format(png):no_upscale(1)/s2.siteapi.org/a8208ce1cf70462/cards/ops9ljvc6g0gwwg04so400g40w08g8" media="(-webkit-min-device-pixel-ratio: 1.5)">				<div class="nh-cards_info">
+					<h4 class="nh-cards__title nh-cards__title_no-margin" style="color: #000000;text-align: center">Post Malone
+					</h4>
+				</div>
+			</div>
+			<div class="artists">
+				<img class="nh-cards_round" alt="Николай Басков" sizes="(max-width: 767px) 288px, (min-width: 768px) 313px" src="//i.siteapi.org/n9T1b7fo5pr1TV2zUkZGjMR7Ff0=/fit-in/313x939/filters:format(png):no_upscale(1)/s2.siteapi.org/a8208ce1cf70462/cards/fvto07f6mrwo84008g0wg80084w4gc" media="(-webkit-min-device-pixel-ratio: 1.5)">				<div class="nh-cards_info">
+					<h4 class="nh-cards__title nh-cards__title_no-margin" style="color: #000000;text-align: center">Николай Басков
+					</h4>
+				</div>
+			</div>
+			<div class="artists">
+				<img class="nh-cards_round" alt="The Weeknd" sizes="(max-width: 767px) 288px, (min-width: 768px) 313px" src="//i.siteapi.org/MHXE2Lj_nMHIsRrqsZKYeMvPxjg=/fit-in/313x939/filters:format(png):no_upscale(1)/s2.siteapi.org/a8208ce1cf70462/cards/niyfo7bm8jk4kows00wcwkcgc4o4gg" media="(-webkit-min-device-pixel-ratio: 1.5)">				<div class="nh-cards_info">
+					<h4 class="nh-cards__title nh-cards__title_no-margin" style="color: #000000;text-align: center">The Weeknd
+					</h4>
+				</div>
+			</div>
+			<div class="artists">
+				<img class="nh-cards_round" alt="Полина Гагарина" sizes="(max-width: 767px) 288px, (min-width: 768px) 313px" src="//i.siteapi.org/0Pd2SuJSQ4N-CAvlXcE6E0MHMPQ=/fit-in/313x939/filters:format(png):no_upscale(1)/s2.siteapi.org/a8208ce1cf70462/cards/hquxklkwo14os8k08wcgswg8kw0cwo" media="(-webkit-min-device-pixel-ratio: 1.5)">				<div class="nh-cards_info">
+					<h4 class="nh-cards__title nh-cards__title_no-margin" style="color: #000000;text-align: center">Полина Гагарина
+					</h4>
+				</div>
+			</div>
+			<div class="artists">
+				<img class="nh-cards_round" alt="Dua Lipa" sizes="(max-width: 767px) 288px, (min-width: 768px) 313px" src="//i.siteapi.org/4rMfzj53P5XoCpdGzkKt8VNjn9s=/fit-in/313x939/filters:format(png):no_upscale(1)/s2.siteapi.org/a8208ce1cf70462/cards/szaz65jhneo4k4wco8s0sws8s0c808" media="(-webkit-min-device-pixel-ratio: 1.5)">				<div class="nh-cards_info">
+					<h4 class="nh-cards__title nh-cards__title_no-margin" style="color: #000000;text-align: center">Dua Lipa
+					</h4>
+				</div>
+			</div>
+			<div class="artists">
+				<img class="nh-cards_round" alt="Егор Крид" sizes="(max-width: 767px) 288px, (min-width: 768px) 313px" src="//i.siteapi.org/no-W4uToxmFAqtkQSjkJtJhqhW0=/fit-in/313x939/filters:format(png):no_upscale(1)/s2.siteapi.org/a8208ce1cf70462/cards/kag5cw91iqogs480k0cookss84wog4" media="(-webkit-min-device-pixel-ratio: 1.5)">				<div class="nh-cards_info">
+					<h4 class="nh-cards__title nh-cards__title_no-margin" style="color: #000000;text-align: center">Егор Крид
+					</h4>
+				</div>
+			</div>
+			<div class="artists">
+				<img class="nh-cards_round" alt="Григорий Лепс" sizes="(max-width: 767px) 288px, (min-width: 768px) 313px" src="//i.siteapi.org/mORSGsS8OKcpqE0nPZW4HHP5Cu4=/fit-in/313x939/filters:format(png):no_upscale(1)/s2.siteapi.org/a8208ce1cf70462/cards/cm7mpi8edsoc0wc0sgwckkgkkw4os8" media="(-webkit-min-device-pixel-ratio: 1.5)">				<div class="nh-cards_info">
+					<h4 class="nh-cards__title nh-cards__title_no-margin" style="color: #000000;text-align: center">Григорий Лепс
+					</h4>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end our_room -->
+<!-- gallery -->
+<section data-widget-services="" data-widget-container="" data-widget-id="8" data-widget-sort="1" data-widget-url="/widget?route=mainPage&amp;on_main=1&amp;type=4&amp;widget_id=8" data-region="1" data-widget-type="4" class="widget-sort widget-block block-8 nh-editor-panel">
+	<section id="services" data-widget-content="" class="widget-block services services_light lazyloaded" style="
+                            background-position: top left;
+                background-repeat: no-repeat;
+                background-size: auto;
+                                        background-color: #FFFFFF;
+            ">
+		<link href="//s.siteapi.org/frontend/static/grid_12/css/service.78c25d.min.css" rel="stylesheet" type="text/css">
+		<div class="widget">
+			<header class="row row_changed widget__header services__header widget__header_underlined">
+				<div class="titlepage">
+					<h2>
+						<a th:href="@{/services}">
+							Наши услуги
+						</a>
+					</h2>
+				</div>
+			</header>
+			<div class="content-block widget__content widget__content_filled" id="services-show">
+				<div class="row row_changed widget__inner" data-ng-show="$ctrl.showContent()">
+					<div class="small-12 column">
+						<article>
+							<div class="row row_changed">
+								<div class="small-up-1 large-up-2  services__list">
+									<div class=" services__item column">
+										<div class="service-item">
+											<a th:href="@{/services}" class="service-item__content">
+												<div class="row row_changed -inline-group_top">
+													<div class="small-6 inline-column">
+														<div class="service-item__image ">
+															<div id="avatar-128102867" class="avatar-view image" data-imagetype="2">
+																<picture>
+																	<source srcset="//i.siteapi.org/bwTWXvdFKGDbytd7cE6SuvyplNI=/0x0:1248x1080/270x180/center/top/filters:fill(transparent):format(webp)/s2.siteapi.org/a8208ce1cf70462/img/h2eiejsd9mgwgw4kw44w4k4kokc80s" type="image/webp">
+																	<img data-src="//i.siteapi.org/3871UUe22QPcF-Jtr-JaRn344h0=/0x0:1248x1080/270x180/center/top/filters:fill(transparent):format(png)/s2.siteapi.org/a8208ce1cf70462/img/h2eiejsd9mgwgw4kw44w4k4kokc80s" alt="Выпуск трека на все площадки" class=" ls-is-cached lazyloaded" title="Выпуск трека на все площадки" src="//i.siteapi.org/3871UUe22QPcF-Jtr-JaRn344h0=/0x0:1248x1080/270x180/center/top/filters:fill(transparent):format(png)/s2.siteapi.org/a8208ce1cf70462/img/h2eiejsd9mgwgw4kw44w4k4kokc80s">
+																</picture>
+															</div>
+														</div>
+													</div>
+													<div class=" small-6 inline-column">
+														<div class="service-item__side">
+															<div class="service-item__title">
+																Выпуск трека на все площадки
+															</div>
+															<div class="service-item__price">
+																25$
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class=" services__item column">
+										<div class="service-item">
+											<a th:href="@{/services}" class="service-item__content">
+												<div class="row row_changed -inline-group_top">
+													<div class="small-6 inline-column">
+														<div class="service-item__image ">
+															<div id="avatar-128102866" class="avatar-view image" data-imagetype="2">
+																<picture><source srcset="//i.siteapi.org/i9sSb3hytD2mYtF_FHaSnp-hUvo=/0x0:360x360/270x180/center/top/filters:fill(transparent):format(webp)/s2.siteapi.org/a8208ce1cf70462/img/tp9vb39ocg00gwkcoc48w480kgsw08" type="image/webp">
+																	<img data-src="//i.siteapi.org/Bhc6q_83BUPf3h4ZXT0uSBhGqJw=/0x0:360x360/270x180/center/top/filters:fill(transparent):format(png)/s2.siteapi.org/a8208ce1cf70462/img/tp9vb39ocg00gwkcoc48w480kgsw08" alt="Подписание контракта на год" class=" ls-is-cached lazyloaded" title="Подписание контракта на год" src="//i.siteapi.org/Bhc6q_83BUPf3h4ZXT0uSBhGqJw=/0x0:360x360/270x180/center/top/filters:fill(transparent):format(png)/s2.siteapi.org/a8208ce1cf70462/img/tp9vb39ocg00gwkcoc48w480kgsw08">
+																</picture>
+															</div>
+														</div>
+													</div>
+													<div class=" small-6 inline-column">
+														<div class="service-item__side">
+															<div class="service-item__title">
+																Подписание контракта
+															</div>
+															<div class="service-item__price">
+																1000$
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="widget__content widget__content_filled">
+			<div class="row">
+				<div data-ng-if="$ctrl.loaded" class="widget__view small-10 small-offset-1 column" data-ui-view="services-view">
+
+				</div>
+			</div>
+		</div>
+	</section>
+</section>
+<!-- end gallery -->
+<!--  contact -->
+<div class="contact">
+	<div class="container inf_contacts">
+		<div class="row row_changed ">
+			<div class="col-md-12">
+				<div class="titlepage">
+					<h2>Контакты</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row row_changed">
+			<div class="col-md-6">
+				<div class="map_main">
+					<div class="map-responsive">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.0909393678335!2d27.61648452241115!3d53.930128215057735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf1b88d41e91%3A0xf42140fd3b230ccc!2z0J7QsdGJ0LXQttC40YLQuNC1IOKEliA2INCR0JPQkNCi0KM!5e0!3m2!1sru!2sby!4v1682371686119!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row row_changed inf_cont">
+			<ul>
+				<li><i class="fa fa-map-marker" ></i>г. Минск, ул. Кедышко 10а</li>
+				<li><i class="fa fa-mobile" ></i>+375444909957</li>
+				<li><i class="fa fa-clock-o" ></i>9:00-21:00</li>
+				<li> <i class="fa fa-envelope" ></i><a href="#"> qwe.rostislav@mail.ru</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end contact -->
+<!--  footer -->
+<footer>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-4">
+					<h3>Контакты</h3>
+					<ul class="conta">
+						<li><i class="fa fa-map-marker" aria-hidden="true"></i>г. Минск, ул. Кедышко 10а</li>
+						<li><i class="fa fa-mobile" aria-hidden="true"></i>+375444909957</li>
+						<li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="#"> qwe.rostislav@mail.ru</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h3>Навигация</h3>
+					<ul class="link_menu">
+						<li class="active"><a th:href="@{/}">Главная</a></li>
+						<li><a th:href="@{/info}">О нас</a></li>
+						<li><a th:href="@{/artists}">Наши артисты</a></li>
+						<li><a th:href="@{/services}">Наши услуги</a></li>
+						<li><a th:href="@{/contact}">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h3>Социальные сети</h3>
+					<ul class="social_icon">
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="row row_changed">
+					<p>
+						2023 © MelodicStream
+						<br><br>
+						Лучший музыкальный дистрибьютор
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- end footer -->
+<!-- Javascript files-->
+<script th:src="@{/js/jquery.min.js}" src="/static/js/jquery.min.js"></script>
+<script th:src="@{/js/bootstrap.bundle.min.js}" src="/static/js/bootstrap.bundle.min.js"></script>
+<script th:src="@{/js/jquery-3.0.0.min.js}" src="/static/js/jquery-3.0.0.min.js"></script>
+<!-- sidebar -->
+<script th:src="@{/js/jquery.mCustomScrollbar.concat.min.js}" src="../static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script th:src="@{/js/custom.js}" src="../static/js/custom.js"></script>
+</body>
+</html>

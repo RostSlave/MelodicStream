@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title>Создание подписки</title>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+  <!-- style css -->
+  <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+  <!-- Responsive-->
+  <link rel="stylesheet" type="text/css" th:href="@{/css/responsive.css}"/>
+  <!-- fevicon -->
+  <link rel="icon" th:href="@{/images/fevicon.png}" type="image/gif"/>
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" type="text/css" th:href="@{/css/jquery.mCustomScrollbar.min.css}">
+  <!-- Tweaks for older IEs-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+
+</head>
+<body>
+<header>
+  <!-- header inner -->
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+          <div class="full">
+            <div class="center-desk">
+              <div class="logo">
+                <a th:href="@{/}"><img th:src="@{/images/logo.jpg}" alt="#" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+          <nav class="navigation navbar navbar-expand-md navbar-dark ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <!--                                    <a class="nav-link" th:href="@{/user_info}">Личная инфа</a>-->
+                  <a class="nav-link" th:href="@{/admin}">Пользователи</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" th:href="@{/subs}">Подписки</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" th:href="@{/tracks}">Треки</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" th:href="@{/sup}">Письма</a>
+                </li>
+                <li class="nav-item" sec:authorize="isAuthenticated()">
+                  <a class="nav-link" th:href="@{/logout}">Выход</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="login_box col-md-6 col-md-offset-3">
+      <div style="text-align: center">
+        <h1>Создание подписки</h1>
+      </div>
+
+      <form action="#" th:action="@{/create_sub}" method="post"  >
+
+        <div class="form-group">
+          <label class="control-label" for="price"> Цена</label>
+          <input id="price" class="form-control" name="price" placeholder="Введите цену подписки"
+                 required autofocus="autofocus" />
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="royalty"> Royalty</label>
+          <input id="royalty" class="form-control" name="royalty" placeholder="Введите royalty подписки"
+                 required autofocus="autofocus" />
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="days"> Дни </label>
+          <input id="days" class="form-control" name="days" placeholder="Введите количество дней подписки"
+                 required autofocus="autofocus" />
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="form-control btn btn-primary">Создать</button>
+        </div>
+        <div class="form-group">
+          <a  class="form-control btn btn-primary back_upd_btn" th:href = "@{/subs}">Назад </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class=" col-md-4">
+          <h3>Контакты</h3>
+          <ul class="conta">
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i>г. Минск, ул. Кедышко 10а</li>
+            <li><i class="fa fa-mobile" aria-hidden="true"></i>+375444909957</li>
+            <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="#"> qwe.rostislav@mail.ru</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Навигация</h3>
+          <ul class="link_menu">
+            <li class="active"><a th:href="@{/}">Главная</a></li>
+            <li><a th:href="@{/info}">О нас</a></li>
+            <li><a th:href="@{/artists}">Наши артисты</a></li>
+            <li><a th:href="@{/services}">Наши услуги</a></li>
+            <li><a th:href="@{/contact}">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Социальные сети</h3>
+          <ul class="social_icon">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <div class="row row_changed">
+          <p>
+            2023 © MelodicStream
+            <br><br>
+            Лучший музыкальный дистрибьютор
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script th:src="@{/js/jquery.min.js}" src="/static/js/jquery.min.js"></script>
+<script th:src="@{/js/bootstrap.bundle.min.js}" src="/static/js/bootstrap.bundle.min.js"></script>
+<script th:src="@{/js/jquery-3.0.0.min.js}" src="/static/js/jquery-3.0.0.min.js"></script>
+<!-- sidebar -->
+<script th:src="@{/js/jquery.mCustomScrollbar.concat.min.js}" src="../static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script th:src="@{/js/custom.js}" src="../static/js/custom.js"></script>
+</body>
+</html>

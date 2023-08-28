@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Наши услуги</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+      <!-- style css -->
+      <link rel="stylesheet" th:href="@{/css/style.css}">
+      <!-- Responsive-->
+      <link rel="stylesheet" th:href="@{/css/responsive.css}">
+      <!-- fevicon -->
+      <link rel="icon" th:href="@{/images/fevicon.png}" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" th:href="@{/css/jquery.mCustomScrollbar.min.css}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img th:src="@{/images/loading.gif}" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a th:href="@{/}"><img th:src="@{/images/logo.jpg}" alt="#" /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item">
+                                 <a class="nav-link" th:href="@{/}">Главная</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" th:href="@{/info}">О нас</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" th:href="@{/artists}">Наши музыканты</a>
+                              </li>
+                              <li class="nav-item active">
+                                 <a class="nav-link" th:href="@{/services}">Наши услуги</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" th:href="@{/contact}">Контакты</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" th:href="@{/login}">Вход</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <div class="three"><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Наши услуги&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1></div>
+      <!-- end header -->
+      <section data-widget-services="" data-widget-container="" data-widget-id="8" data-widget-sort="1" data-widget-url="/widget?route=mainPage&amp;on_main=1&amp;type=4&amp;widget_id=8" data-region="1" data-widget-type="4" class="widget-sort widget-block block-8 nh-editor-panel">
+         <section id="services" data-widget-content="" class="widget-block services services_light lazyloaded" style="
+                            background-position: top left;
+                background-repeat: no-repeat;
+                background-size: auto;
+                                        background-color: #FFFFFF;
+            ">
+            <link href="//s.siteapi.org/frontend/static/grid_12/css/service.78c25d.min.css" rel="stylesheet" type="text/css">
+            <div class="widget">
+               <header class="row row_changed widget__header services__header widget__header_underlined">
+                  <div class="titlepage">
+                     <h2>
+                        <a th:href="@{/services}">
+                           Наши услуги
+                        </a>
+                     </h2>
+                  </div>
+               </header>
+               <div class="content-block widget__content widget__content_filled" id="services-show">
+                  <div class="row row_changed widget__inner" data-ng-show="$ctrl.showContent()">
+                     <div class="small-12 column">
+                        <article>
+                           <div class="row row_changed">
+                              <div class="small-up-1 large-up-2  services__list">
+                                 <div class=" services__item column">
+                                    <div class="service-item">
+                                       <a th:href="@{/login}" class="service-item__content">
+                                          <div class="row row_changed -inline-group_top">
+                                             <div class="small-6 inline-column">
+                                                <div class="service-item__image ">
+                                                   <div id="avatar-128102867" class="avatar-view image" data-imagetype="2">
+                                                      <picture>
+                                                         <source srcset="//i.siteapi.org/bwTWXvdFKGDbytd7cE6SuvyplNI=/0x0:1248x1080/270x180/center/top/filters:fill(transparent):format(webp)/s2.siteapi.org/a8208ce1cf70462/img/h2eiejsd9mgwgw4kw44w4k4kokc80s" type="image/webp">
+                                                         <img data-src="//i.siteapi.org/3871UUe22QPcF-Jtr-JaRn344h0=/0x0:1248x1080/270x180/center/top/filters:fill(transparent):format(png)/s2.siteapi.org/a8208ce1cf70462/img/h2eiejsd9mgwgw4kw44w4k4kokc80s" alt="Выпуск трека на все площадки" class=" ls-is-cached lazyloaded" title="Выпуск трека на все площадки" src="//i.siteapi.org/3871UUe22QPcF-Jtr-JaRn344h0=/0x0:1248x1080/270x180/center/top/filters:fill(transparent):format(png)/s2.siteapi.org/a8208ce1cf70462/img/h2eiejsd9mgwgw4kw44w4k4kokc80s">
+                                                      </picture>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class=" small-6 inline-column">
+                                                <div class="service-item__side">
+                                                   <div class="service-item__title">
+                                                      Выпуск трека на все площадки
+                                                   </div>
+                                                   <div class="service-item__price">
+                                                      20$
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class=" services__item column">
+                                    <div class="service-item">
+                                       <a th:href="@{/login}" class="service-item__content">
+                                          <div class="row row_changed -inline-group_top">
+                                             <div class="small-6 inline-column">
+                                                <div class="service-item__image ">
+                                                   <div id="avatar-128102866" class="avatar-view image" data-imagetype="2">
+                                                      <picture><source srcset="//i.siteapi.org/i9sSb3hytD2mYtF_FHaSnp-hUvo=/0x0:360x360/270x180/center/top/filters:fill(transparent):format(webp)/s2.siteapi.org/a8208ce1cf70462/img/tp9vb39ocg00gwkcoc48w480kgsw08" type="image/webp">
+                                                         <img data-src="//i.siteapi.org/Bhc6q_83BUPf3h4ZXT0uSBhGqJw=/0x0:360x360/270x180/center/top/filters:fill(transparent):format(png)/s2.siteapi.org/a8208ce1cf70462/img/tp9vb39ocg00gwkcoc48w480kgsw08" alt="Подписание контракта на год" class=" ls-is-cached lazyloaded" title="Подписание контракта на год" src="//i.siteapi.org/Bhc6q_83BUPf3h4ZXT0uSBhGqJw=/0x0:360x360/270x180/center/top/filters:fill(transparent):format(png)/s2.siteapi.org/a8208ce1cf70462/img/tp9vb39ocg00gwkcoc48w480kgsw08">
+                                                      </picture>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class=" small-6 inline-column">
+                                                <div class="service-item__side">
+                                                   <div class="service-item__title">
+                                                      Оформление подписки
+                                                   </div>
+                                                   <div class="service-item__price">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+
+                              </div>
+                           </div>
+                        </article>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="widget__content widget__content_filled">
+               <div class="row">
+                  <div data-ng-if="$ctrl.loaded" class="widget__view small-10 small-offset-1 column" data-ui-view="services-view">
+
+                  </div>
+               </div>
+            </div>
+         </section>
+      </section>
+      <!-- end gallery -->
+    
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class=" col-md-4">
+                     <h3>Контакты</h3>
+                     <ul class="conta">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>г. Минск, ул. Кедышко 10а</li>
+                        <li><i class="fa fa-mobile" aria-hidden="true"></i>+375444909957</li>
+                        <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="#"> qwe.rostislav@mail.ru</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-4">
+                     <h3>Навигация</h3>
+                     <ul class="link_menu">
+                        <li class="active"><a th:href="@{/}">Главная</a></li>
+                        <li><a th:href="@{/info}">О нас</a></li>
+                        <li><a th:href="@{/artists}">Наши артисты</a></li>
+                        <li><a th:href="@{/services}">Наши услуги</a></li>
+                        <li><a th:href="@{/contact}">Контакты</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-4">
+                     <h3>Социальные сети</h3>
+                     <ul class="social_icon">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row row_changed">
+                     <p>
+                        2023 © MelodicStream
+                        <br><br>
+                        Лучший музыкальный дистрибьютор
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script th:src="@{/js/jquery.min.js}"></script>
+      <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+      <script th:src="@{/js/jquery-3.0.0.min.js}"></script>
+      <!-- sidebar -->
+      <script th:src="@{/js/jquery.mCustomScrollbar.concat.min.js}"></script>
+      <script th:src="@{/js/custom.js}"></script>
+   </body>
+</html>
